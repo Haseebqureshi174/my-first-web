@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 20px;
+        }
+        img{
+           position: relative;
+           left: 550px;
+           transition: opacity 0.3s ease-in-out;
+        }
+        .b1{
+            position: relative;
+            right: 530px;
+            width: 150px;
+            height: 100px;
+            font-size: x-large;
+        }
+        .b2{
+            position: relative;
+            left: 450px;
+            width: 150px;
+            height: 100px;
+            font-size: x-large;
+        }
+        .b2:hover {
+            color: aquamarine;
+            width: 160px;
+            height: 110px;
+            border-radius: 60px;
+
+        }
+        .b1:hover {
+            color: aquamarine;
+            width: 160px;
+            height: 110px;
+            border-radius: 60px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <img src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" alt="" id="imge">
+   
+
+    <button class="b1" onclick="mufun()">turn Off</button>
+    <button class="b2" onclick="mufun2()">trun On</button>
+     
+    <script>
+        // var person ={
+        //     name : "Anish",
+        //     age : 21,
+        //     occuption: "developer",
+
+
+        // }
+        // var value = "";
+        // var numbone = prompt("enter first value to perform the multipalication operation", value);
+        // var numbtow = prompt("enter second value to perform the multipalication operation", value)
+        // var result = eval(numbone * numbtow)
+        // document.write("The result of multipaling :" + numbone + "x" +numbtow + "=" + result);
+        // var loanamount = prompt('enter your amount');
+        // var interset = 8;
+        // var intersetamount = loanamount * (interset/ 100);
+        // totalamount = loanamount + intersetamount;
+        // document.write("<br> total amount to be paid ($):</br>" + totalamount + "<br />");
+        // var a = 10;
+        // console.log(a)
+        // document.write(++a)
+        // var number = 3;
+        // alert("Number after increment = " + ++number)
+        // alert("Number after decrement =" + --number)
+        // var firstname = 99;
+        // var secondname = 98;
+        // document.write("fist Number is greater then the second number: "+ (firstname > secondname) );
+        // document.write("<br/> first name is less then the second number " + (firstname < secondname) );
+        // document.write("<br/> first number is equal to the second number " + (firstname == secondname) );
+        // document.write("<br/> first name is less then the second number " + (firstname != secondname) );
+        // var a = 2
+        // var b = 4
+        // a+=b
+        // document.write(a)
+        // var name ="john";
+        // var age = 23;
+        // alert("john/'s age is greater than or equal to 23 year : " + ((name =="john") && (age < 23)));
+
+        // var temp = parseInt(prompt("enter your temo"))
+        // status = ((typeof(temp) =="number" && (temp >= 30 )) ? "hot" : "cool")
+        // document.write("your temp status" + temp +  status  )
+        
+        // var username = "admin"
+        // var Password = "admin123"
+        // if( username = "admin" && Password == "admin123" ){
+        //     document.write ("valid")
+        // }
+        // else{
+        //     document.write(" not valid")
+        // }
+        
+
+        // var age = parseInt(prompt("enter your age"))
+        // var citizen = prompt("your city nae")
+        // if(age >=18 ){
+        //     if(citizen == "karachi")
+        //     document.write("eglible")
+        // }
+        // else{
+        //     document.write("not eglible")
+        // }
+
+
+
+        // var mark = parseInt(prompt("enter your mark"))
+        // var attendence = parseInt(prompt("enter your attendence"))
+        // if(mark >=50 ){
+        //     if(attendence >= 75){
+        //         document.write("pass")
+        //     }
+        
+        // else{
+        //     document.write("your mark is perfect but attendence is low")
+        // }}
+        // else{document.write("fail")}
+
+
+        // var day = prompt("enter your days name");
+        // switch(day){
+        // case "Monday":
+        // document.write("1 day")
+        // break  0
+        // case "tuesday":
+        // document.write("2 day")
+        // break
+        // case "wednesday":
+        // document.write("3 day")
+        // }
+        
+        // var t = parseInt(prompt("enter your table"))
+        // var l = parseInt(prompt("enter your lenght"))
+        // var i = 1;
+        // while(i<=l){
+        //     document.write(t+" x "+ i +" = " + i*t, "<br/>" )
+        //     i++
+        // }
+        
+
+
+        // var t = parseInt(prompt("enter your table"))
+        // var l = parseInt(prompt("enter your table length"))
+        // for(var i=1;i<=l;i++){
+        //     document.write(t+ " x " + l+ " = "+ i*t, "<br/>")
+        // }
+
+        // var i = 1;
+        // do{document.write( i*2, "<br/>" )
+        //     i++
+        // }
+        // while(i<=10)
+
+        // for(var i = 5 ;  i >= 1; i--){
+        //     for(var j=1 ; j<=i; j++){
+        //         document.write(j)
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+        // var arr = ["apple", "grapc", "tamato", "banana", "indian fig" ]
+        // document.write(arr[0])
+
+
+        // var flower = new Array("Rose", "Sunflower", "Daisy");
+        // document.write("numberflowerslenght: ", flower.lenght, "<br/>");
+        // document.write("flower:",flower.join("."),"<br/>");
+        // document.write("orchidandlilyareaddedpush:",flower.push("orchid", "lily"), "<br/>");
+        // document.write("flower (in accsending):",flower.sort(),"<br/>");
+        // document.write("flower removed:"+flower.pop()+"<br/>");
+
+        
+        // document.write(val1*val2,"<br/>")
+        // document.write(val1/val2,"<br/>")
+
+
+        
+        
+        // function add(val1,val2){
+        // document.write(val1+val2,"<br/>")
+        // }
+        
+        // function mul(val1,val2){
+        // document.write(val1*val2,"<br/>")
+        // }
+        
+        // function di(val1,val2){
+        // document.write(val1/val2,"<br/>")
+        // }
+
+
+        // var car = {
+        //     name : "car",
+        //     color :"black", 
+        //     modal : "1985",
+        // }
+        // console.log(car)
+        // document.write(car.modal)
+
+
+
+
+        // var obj = new Object()
+        // obj.name="carola",
+        // obj.color="purple"
+        // obj.modal="1945"
+        // console.log(obj)
+        // document.write(obj.name)
+    
+
+        // var user = "adnmin"
+        // var log = "admin123"
+        // if(user = "admin" && log == "admin123" ? "not" : "done){
+        // document.write(loging)
+        //     else{
+        //         not 
+        //     }
+        // }
+
+
+
+
+        function mufun(){
+            var image = document.getElementById("imge").src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png"
+        }
+        mufun2
+        function mufun2(){
+            var image = document.getElementById("imge").src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png"
+        }
+
+
+
+        
+</script>
+</html>

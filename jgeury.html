@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        text-align: center;
+    }
+    button{
+        
+        color: aqua;
+        width: 150px;
+        height: 50px;
+        border-radius: 3px;
+        background: #000;
+    }
+    button:hover{
+        color: blueviolet;
+        border-radius: 50px;
+    }
+    
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+
+div{
+    text-align: center;
+    
+}
+div > h3{
+    padding-top: 15px;
+}
+
+</style>
+<body>
+    <!-- <p id="#hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, sed magnam ut perspiciatis consectetur a odio. Eius ratione animi cum doloremque nam quia fugiat dolorum. Quam maiores quas dignissimos aperiam?</p>
+    <center>
+    <button id="toggle">Two In One</button></center>
+
+
+  <div id="flip"><p>click now</p></div>
+   <div id="panel"><p>Hellohaseeb</p></div> -->
+
+
+   <p>This A paragrah</p>
+   <p>This A Another paragrah</p>
+
+   <ol>
+    <li>List item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+   </ol>
+   <button id="bntap">append</button>
+
+
+   <div style="background-color: aqua; height: 100px; width: 100px; border-radius: 30px; border: 1px solid #000; position: relative;"><h3>Qjuery</h3></div>
+   <button id="butania" >animate</button>
+   
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#butania").click(function(){
+         $("div").animate({left: '650px',
+         height: "200px" ,
+         width: "200px",
+         paddingtop: "15px",
+         });
+        });
+        });
+
+
+        $(document).ready(function(){
+            $("#bntap").click(function(){
+            $("ol").append("<li>haseeb 4</li>");
+         });
+        });
+
+//         $(document).ready(function(){
+//         $("#hide").click(function(){
+//           $("p").hide();
+//         });
+        
+//         $("#show").click(function(){
+//           $("p").show();
+//         });
+//         $("#toggle").click(function(){
+//           $("p").toggle();
+//         });
+//     });
+
+
+//     $(document).ready(function(){
+//     $("#flip").click(function(){
+//   $("#panel").slideToggle();
+// }); 
+
+//     });
+    </script>
+</body>
+</html>

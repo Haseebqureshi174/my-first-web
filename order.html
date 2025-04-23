@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container{
+        display: flex;
+       align-items: stretch;
+        background-color: aqua;
+        
+    }
+    .flex-container>div{
+        background-color: blueviolet;
+        color: black;
+        width: 85px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    h1{
+        color: aqua;
+
+    }
+    .h1:hover{
+        color: brown;
+    }
+</style>
+<body>
+    <div class="flex-container">
+    <div class="h1" style="order: 2;">A</div>
+    <div style="order: 3;">B</div>
+    <div style="order: 4;">C</div>
+    <div style="order: 1;">D</div>
+</div>
+</body>
+</html>
